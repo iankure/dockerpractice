@@ -1,15 +1,15 @@
 version: '3.3'
 services:
   os:
-    image: "izumi/izumi"
+    image: "minio/minio"
     ports:
       - "9000:9000"
     volumes:
       - os:/data
     command: server /data
     environment:
-      IZUMI_ACCESS_KEY: izumi_is_from_japan
-      IZUMI_SECRET_KEY: izumi_has_a_cat
+      MINIO_ACCESS_KEY: wonderfuljohnson
+      MINIO_SECRET_KEY: hamster1234
 
 volumes:
   os:
